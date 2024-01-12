@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+</head>
+<body>
+    <div id="nav">
+        <div class="logo">
+            <img src="prem1.png" alt="logo">
+        </div>
+        <div class="nav-list">
+            <a href="index.html">HOME</a>
+            <a href="#">COURSE</a>
+            <a href="#">ONLINE COURSE</a>
+            <a href="#">CONTACT US</a>
+            <a href="#">LOGIN/SIGNUP</a>
+            <i onclick=showSidebar() class="ri-menu-3-fill"></i>
+        </div>
+        <div class="sidebar">
+            <div class="logo logo1">
+                <img src="prem1.png" alt="logo">
+                <i onclick=hideSidebar() class="ri-close-fill"></i>
+            </div>
+            <div class="nav-list-sidebar">
+                <a href="index.html">HOME</a>
+                <a href="#">COURSE</a>
+                <a href="#">ONLINE COURSE</a>
+                <a href="#">CONTACT US</a>
+                <a href="#">LOGIN/SIGNUP</a>
+                <a href="#">SYLLABUS</a>
+                <a href="#">STAFF</a>
+                <a href="#">EVENT & ACTIVITIES</a>
+                <a href="deparment.html">DEPARMENT</a>
+                <a href="#">GALLERY</a>
+                <a href="#">NAAC</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        let sidebar= document.querySelector(".sidebar");
+        function showSidebar(){
+            sidebar.style.display = 'flex';
+        }
+        function hideSidebar(){
+            sidebar.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
